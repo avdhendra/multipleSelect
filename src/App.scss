@@ -1,0 +1,95 @@
+    .formMultiSelect {
+  flex: 1;
+  width: 100%;
+
+  [class*="-control"] {
+    width: 100%;
+    min-height: 40px;
+    border: none;
+    border-radius: 20px;
+    border: 1px solid #d6d6d6;
+    background-color: #f3f3f3;
+    font-weight: 200;
+    box-shadow: none;
+
+    &:hover {
+      border-color: #d6d6d6;
+    }
+
+    // [class*="-ValueContainer"] {
+    > div {
+      padding: 2px;
+      text-indent: 10px;
+      overflow-x: auto;
+
+      input {
+        text-indent: 10px;
+      }
+
+      [class*="-multiValue"] {
+        border: 1px solid #d6d6d6;
+        border: 1px solid #d6d6d6;
+        border-radius: 15px;
+        text-indent: 0px;
+        color: #a2a2a2;
+        overflow: hidden;
+      }
+    }
+  }
+
+  [class*="-menu"] {
+    width: 100%;
+    max-height: 230px;
+    border-radius: 20px;
+    border: 1px solid #d6d6d6;
+    background-color: #f3f3f3;
+    font-weight: 200;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25);
+    overflow: hidden;
+    cursor: pointer;
+
+    > div {
+      padding: 0;
+      max-height: 230px;
+      height: 100%;
+      // overflow-y: auto;
+
+      [class*="-option"] {
+        color: #000000;
+        background-color: #f3f3f3;
+        cursor: pointer;
+
+      }
+    }
+  }
+}
+
+
+
+.custom-option{
+    display: flex;
+    align-items: center;
+    
+    padding: 5px;
+   
+&-image {
+      width:30px;
+      height: 30px;
+      border:1px solid black ;
+      margin-right: 8px;
+      border-radius: 50%;
+    }
+
+&-label{
+  text-align: center;
+  background: transparent;
+}
+&-email{
+  text-align: center;
+  color: #7f7f7f;
+  background: transparent;
+  margin-left: 30px;
+}
+
+
+}
